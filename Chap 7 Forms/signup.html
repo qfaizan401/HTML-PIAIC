@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+<body>
+    <form action="http://www.example.com/login.php" method="GET">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <p>
+                First Name
+                <input type="text" name="Firstname" size="15" maxlength="30" required>
+                <br><br>
+                Last Name
+                <input type="text" name="Lastname" size="15" maxlength="30">
+            </p>
+            <p>
+                Gender:
+                <br>
+                <input type="radio" name="gender" checked value="m" id="male">
+                <label for="male">Male</label>
+                <label><input type="radio" name="gender" value="f">Female</label>
+            </p>
+            <p>
+                enter you date of birth
+                <input type="date" name="dob">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Account Details</legend>
+            <p>
+                Email:
+                <input type="email" name="email">
+            </p>
+            <p>
+                Enter password
+                <input type="password" name="password" size="15" maxlength="30">
+            </p>
+            <p>
+                City:
+                <select name="city" id="" multiple>
+                    <option value="khi">KHI</option>
+                    <option value="lhr">LHR</option>
+                    <option value="hyd">HYD</option>
+                </select>
+            </p>
+            <p>
+                interest:
+                <br>
+                <input type="checkbox" name="interest" value="men"> Men Cloths
+                <input type="checkbox" name="interest" value="women">women Cloths
+                <input type="checkbox" name="interest" value="acc"> Bags
+            </p>
+            <p>
+                Re-enter password
+                <input type="password" name="password" size="15" maxlength="30">
+            </p>
+        </fieldset>
+        <textarea name="comments" id="" cols="30" rows="10">Your Comments</textarea>
+        <p>
+            upload pic:
+            <br>
+            <input type="file" name="dp">
+            <br>
+            <input type="submit" value="upload">
+        </p>
+        <input type="submit">
+        <br><br>
+        <input type="image" src="submit_button.gif">
+    </form>
+    <!---->
+
+    <form action="http://www.example.com/login.php" method="GET">
+        <p>
+            Firstname:
+            <input type="text" name="fname">
+            Lastname:
+            <input type="text" name="lname">
+        </p>
+        <input type="hidden" name="source" value="men/clothing/jeans">
+        <input type="submit">
+    </form>
+</body>
+</html>
